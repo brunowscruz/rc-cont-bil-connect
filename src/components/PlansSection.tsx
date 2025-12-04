@@ -5,7 +5,6 @@ const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=5513997877500&text=Ol
 const plans = [
   {
     name: "MEI Pro",
-    highlight: "Abertura Grátis*",
     features: [
       "Pró-labore",
       "Folha de pagamento (1 Funcionário)",
@@ -21,7 +20,6 @@ const plans = [
   },
   {
     name: "Simples Nacional",
-    highlight: "Abertura Grátis*",
     features: [
       "Pró-labore de até 4 sócios",
       "Folha de pagamento de até 2 Funcionários",
@@ -85,14 +83,9 @@ const PlansSection = () => {
                 </svg>
               </div>
 
-              <h3 className={`text-2xl font-bold mb-2 ${plan.popular ? '' : 'text-foreground'}`}>
+              <h3 className={`text-2xl font-bold mb-6 ${plan.popular ? '' : 'text-foreground'}`}>
                 {plan.name}
               </h3>
-              <p className={`text-lg font-semibold mb-6 ${
-                plan.popular ? 'text-gold-light' : 'text-primary'
-              }`}>
-                {plan.highlight}
-              </p>
 
               {/* Features */}
               <ul className="space-y-3 mb-8">
@@ -128,9 +121,6 @@ const PlansSection = () => {
           ))}
         </div>
 
-        <p className="text-center text-sm text-muted-foreground">
-          *Abertura gratuita sujeita a condições. Entre em contato para saber mais.
-        </p>
       </div>
     </section>
   );
