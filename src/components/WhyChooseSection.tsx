@@ -1,4 +1,4 @@
-import { MessageCircle, CheckCircle2 } from "lucide-react";
+import { MessageCircle, CheckCircle2, Scissors, Sparkles, Dumbbell, GraduationCap, Briefcase, Store, Users } from "lucide-react";
 
 const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=5513997877500&text=Ol%C3%A1!%20Entrei%20no%20seu%20Site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.";
 
@@ -10,6 +10,17 @@ const benefits = [
   "Suporte via WhatsApp rápido e eficiente",
 ];
 
+const niches = [
+  { name: "MEI", icon: Users },
+  { name: "Barbearias", icon: Scissors },
+  { name: "Manicures e Esteticistas", icon: Sparkles },
+  { name: "Salões de Beleza", icon: Sparkles },
+  { name: "Personal Trainers", icon: Dumbbell },
+  { name: "Professores Particulares", icon: GraduationCap },
+  { name: "Consultores", icon: Briefcase },
+  { name: "Lojas", icon: Store },
+];
+
 const WhyChooseSection = () => {
   return (
     <section className="section-padding bg-secondary">
@@ -19,8 +30,8 @@ const WhyChooseSection = () => {
           <div className="relative">
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80" 
-                alt="Equipe RC Contabilidade"
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80" 
+                alt="Contador profissional trabalhando - RC Contabilidade em Praia Grande"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -72,6 +83,37 @@ const WhyChooseSection = () => {
               QUERO SABER MAIS
             </a>
           </div>
+        </div>
+
+        {/* Niches Section */}
+        <div className="mt-20">
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground text-center mb-4">
+            Somos Especialistas nos Segmentos Abaixo
+          </h3>
+          <p className="text-muted-foreground text-center mb-10 max-w-2xl mx-auto">
+            Nossa contabilidade em Praia Grande atende diversos nichos com expertise e dedicação
+          </p>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            {niches.map((niche, index) => {
+              const Icon = niche.icon;
+              return (
+                <div 
+                  key={index} 
+                  className="bg-card rounded-xl p-4 text-center hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-border/50"
+                >
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Icon className="w-6 h-6 text-primary" />
+                  </div>
+                  <p className="text-foreground font-medium text-sm">{niche.name}</p>
+                </div>
+              );
+            })}
+          </div>
+          
+          <p className="text-muted-foreground text-center mt-6 text-sm">
+            Entre outros segmentos... <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Fale conosco!</a>
+          </p>
         </div>
       </div>
     </section>
