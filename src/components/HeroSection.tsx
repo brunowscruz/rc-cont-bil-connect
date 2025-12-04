@@ -30,7 +30,7 @@ const HeroSection = () => {
 
           {/* Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 leading-tight animate-slide-up">
-            Contabilidade em Santos com{" "}
+            Contabilidade em Praia Grande com{" "}
             <span className="text-primary-light">alta satisfação</span> e{" "}
             <span className="text-gold">resultados comprovados</span>.
           </h1>
