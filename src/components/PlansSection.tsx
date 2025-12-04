@@ -1,6 +1,15 @@
-import { MessageCircle, Check } from "lucide-react";
+import { MessageCircle, Check, FileText, Calculator, Receipt, TrendingUp, ClipboardCheck, Users } from "lucide-react";
 
 const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=5513997877500&text=Ol%C3%A1!%20Entrei%20no%20seu%20Site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os.";
+
+const services = [
+  { icon: FileText, label: "Emissão de Notas Fiscais" },
+  { icon: Calculator, label: "Ajustes Contábeis" },
+  { icon: Receipt, label: "Apuração de Impostos" },
+  { icon: TrendingUp, label: "Planejamento Tributário" },
+  { icon: ClipboardCheck, label: "Obrigações Acessórias" },
+  { icon: Users, label: "Folha de Pagamento" },
+];
 
 const plans = [
   {
@@ -40,11 +49,44 @@ const PlansSection = () => {
   return (
     <section className="section-padding bg-background">
       <div className="container-custom">
-        {/* Header */}
+        {/* Intro Section */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            NOSSOS <span className="text-primary">PLANOS</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+            Precisa de uma <span className="text-primary">Contabilidade em Praia Grande</span>?
           </h2>
+          <p className="text-muted-foreground max-w-3xl mx-auto mb-8 text-lg">
+            Se você precisa de uma contabilidade em Praia Grande para emissão de notas fiscais, ajustes contábeis, 
+            apuração de impostos, planejamento tributário, obrigações acessórias, folha de pagamento ou qualquer 
+            outro serviço contábil, entre em contato conosco!
+          </p>
+          
+          {/* Services Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto mb-8">
+            {services.map((service, index) => (
+              <div key={index} className="flex flex-col items-center gap-2 p-4 rounded-xl bg-card border border-border">
+                <service.icon className="w-8 h-8 text-primary" />
+                <span className="text-sm text-muted-foreground text-center">{service.label}</span>
+              </div>
+            ))}
+          </div>
+
+          <a 
+            href={WHATSAPP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-whatsapp inline-flex items-center gap-2 mb-16"
+          >
+            <MessageCircle className="w-5 h-5" />
+            Quero falar com atendimento
+          </a>
+        </div>
+
+        {/* Plans Header */}
+        <div className="text-center mb-16">
+          <p className="text-muted-foreground mb-4">Muitos clientes escolhem um dos planos abaixo:</p>
+          <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+            NOSSOS <span className="text-primary">PLANOS</span>
+          </h3>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             Escolha o plano ideal para o seu negócio. Todos incluem suporte dedicado via WhatsApp.
           </p>
