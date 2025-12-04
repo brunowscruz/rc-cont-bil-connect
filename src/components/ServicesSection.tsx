@@ -31,11 +31,14 @@ const ServicesSection = () => {
       <div className="container-custom">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-primary font-semibold mb-2 uppercase tracking-wider">SUA EMPRESA VAI TER ACESSO:</p>
+          <p className="text-primary font-semibold mb-2 uppercase tracking-wider">CONTABILIDADE EM PRAIA GRANDE</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Soluções Contábeis Personalizadas<br />
-            <span className="text-primary">Para Sua Empresa Crescer.</span>
+            <span className="text-primary">Para Sua Empresa Crescer em Praia Grande.</span>
           </h2>
+          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
+            A RC Contabilidade é referência em contabilidade em Praia Grande, oferecendo serviços completos para empresas de todos os portes.
+          </p>
         </div>
 
         {/* Services Grid */}

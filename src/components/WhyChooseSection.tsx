@@ -34,12 +34,12 @@ const WhyChooseSection = () => {
           {/* Content */}
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Por Que Escolher a<br />
-              <span className="text-primary">RC Contabilidade.</span>
+              A Melhor Contabilidade<br />
+              <span className="text-primary">em Praia Grande SP.</span>
             </h2>
             
             <p className="text-muted-foreground mb-8 text-lg">
-              Não importa se você precisa abrir uma empresa, transformar seu MEI para ME ou migrar de outra contabilidade. 
+              Não importa se você precisa abrir uma empresa, transformar seu MEI para ME ou migrar de outra contabilidade em Praia Grande. 
               Todo esse processo será feito por contadores experts, e você poderá acompanhar tudo de perto.
             </p>
 

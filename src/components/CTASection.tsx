@@ -28,12 +28,12 @@ const CTASection = () => {
           </div>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
-            Pronto para transformar a<br />
-            <span className="text-gold">contabilidade da sua empresa?</span>
+            Sua Contabilidade em Praia Grande<br />
+            <span className="text-gold">está a um clique de distância!</span>
           </h2>
           
           <p className="text-lg text-primary-foreground/80 mb-10 max-w-2xl mx-auto">
-            Entre em contato agora mesmo pelo WhatsApp e descubra como podemos ajudar seu negócio a crescer com segurança e eficiência.
+            Entre em contato agora mesmo pelo WhatsApp e descubra como a RC Contabilidade pode ajudar seu negócio a crescer em Praia Grande com segurança e eficiência.
           </p>
 
           {/* Main CTA */}
@@ -55,7 +55,7 @@ const CTASection = () => {
             </div>
             <div className="flex items-center justify-center gap-3 text-primary-foreground/80">
               <MapPin className="w-5 h-5" />
-              <span>Santos - SP</span>
+              <span>Praia Grande - SP</span>
             </div>
             <div className="flex items-center justify-center gap-3 text-primary-foreground/80">
               <Clock className="w-5 h-5" />

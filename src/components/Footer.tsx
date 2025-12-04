@@ -18,7 +18,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-primary-foreground/60 text-sm text-center">
-            © {currentYear} RC Contabilidade & Negócios. Todos os direitos reservados.
+            © {currentYear} RC Contabilidade & Negócios - Contabilidade em Praia Grande SP. Todos os direitos reservados.
           </p>
 
           {/* Social/Contact */}
