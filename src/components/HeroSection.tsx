@@ -5,7 +5,7 @@ const WHATSAPP_LINK = "https://api.whatsapp.com/send?phone=5513997877500&text=Ol
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen w-full flex items-center">
+    <section className="relative min-h-screen w-full flex items-center pt-24">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
